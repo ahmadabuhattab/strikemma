@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strike MMA | Private Mixed Martial Arts Training - Mississauga</title>
+  <meta name="description" content="Strike MMA - Premium private Mixed Martial Arts coaching in Mississauga, ON. One-on-one training, professional coaches, grappling classes, and self-defense programs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#129354;</text></svg>">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">STRIKE</span>
+    </div>
+  </div>
+
+  <!-- Cursor Follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <svg class="nav-logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="25" cy="25" r="24" stroke="currentColor" stroke-width="1.5"/>
+          <text x="25" y="21" text-anchor="middle" fill="#E63946" font-family="Bebas Neue, sans-serif" font-size="11" letter-spacing="1">STRIKE</text>
+          <text x="25" y="33" text-anchor="middle" fill="currentColor" font-family="Bebas Neue, sans-serif" font-size="11" letter-spacing="2">MMA</text>
+        </svg>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#coaches" class="nav-link">Coaches</a>
+        <a href="#partners" class="nav-link">Partners</a>
+        <a href="#contact" class="nav-link nav-link-cta">Get Started</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#programs" class="mobile-link">Programs</a>
+      <a href="#schedule" class="mobile-link">Schedule</a>
+      <a href="#coaches" class="mobile-link">Coaches</a>
+      <a href="#partners" class="mobile-link">Partners</a>
+      <a href="#contact" class="mobile-link mobile-link-cta">Get Started</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-gradient"></div>
+      <div class="hero-lines">
+        <div class="h-line"></div>
+        <div class="h-line"></div>
+        <div class="h-line"></div>
+        <div class="h-line"></div>
+        <div class="h-line"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge" data-animate="fade-up">
+        <span class="badge-dot"></span>
+        Private MMA Training &mdash; Mississauga, ON
+      </div>
+
+      <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+        <span class="hero-title-line">TRAIN LIKE A</span>
+        <span class="hero-title-line hero-title-outline">FIGHTER</span>
+      </h1>
+
+      <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+        Premium one-on-one MMA coaching with professional trainers and pad holders.
+        Striking, grappling, ground control &mdash; unlock your full potential.
+      </p>
+
+      <div class="hero-actions" data-animate="fade-up" data-delay="300">
+        <a href="#contact" class="btn btn-primary">
+          <span>Book a Session</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="#programs" class="btn btn-ghost">
+          <span>View Programs</span>
+        </a>
+      </div>
+
+      <div class="hero-stats" data-animate="fade-up" data-delay="400">
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="1">1</span><span class="hero-stat-suffix">:1</span>
+          <span class="hero-stat-label">Private Coaching</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="7">7</span><span class="hero-stat-suffix">+</span>
+          <span class="hero-stat-label">Ages Welcome</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="5">5</span><span class="hero-stat-suffix">&#9733;</span>
+          <span class="hero-stat-label">Rated Training</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-grid">
+        <div class="about-visual" data-animate="fade-right">
+          <div class="about-visual-card">
+            <div class="about-icon-grid">
+              <div class="about-icon-item">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                <span>Discipline</span>
+              </div>
+              <div class="about-icon-item">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <span>Power</span>
+              </div>
+              <div class="about-icon-item">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                <span>Confidence</span>
+              </div>
+              <div class="about-icon-item">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>Defense</span>
+              </div>
+            </div>
+            <div class="about-visual-accent"></div>
+          </div>
+        </div>
+
+        <div class="about-content" data-animate="fade-left">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title">More Than a Gym.<br><span class="text-accent">A Fighting Family.</span></h2>
+          <p class="section-text">
+            Strike MMA is Mississauga's premier private Mixed Martial Arts training facility. We offer
+            exclusive one-on-one coaching with professional coaches and pad holders, ensuring every session
+            is tailored to your skill level and goals.
+          </p>
+          <p class="section-text">
+            Whether you're a complete beginner looking to learn self-defense, a young athlete building
+            foundational skills, or an experienced fighter sharpening your game &mdash; our doors are open.
+            We believe martial arts transforms not just your body, but your mind and spirit.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div>
+                <strong>Private & Personalized</strong>
+                <span>Every session customized to you</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div>
+                <strong>Professional Coaches</strong>
+                <span>Trained, certified pad holders</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div>
+                <strong>All Skill Levels</strong>
+                <span>Beginners to advanced fighters</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div>
+                <strong>Community Driven</strong>
+                <span>Built on respect and brotherhood</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>STRIKING</span>
+      <span class="marquee-dot"></span>
+      <span>GRAPPLING</span>
+      <span class="marquee-dot"></span>
+      <span>GROUND CONTROL</span>
+      <span class="marquee-dot"></span>
+      <span>SELF-DEFENSE</span>
+      <span class="marquee-dot"></span>
+      <span>PAD WORK</span>
+      <span class="marquee-dot"></span>
+      <span>CONDITIONING</span>
+      <span class="marquee-dot"></span>
+      <span>STRIKING</span>
+      <span class="marquee-dot"></span>
+      <span>GRAPPLING</span>
+      <span class="marquee-dot"></span>
+      <span>GROUND CONTROL</span>
+      <span class="marquee-dot"></span>
+      <span>SELF-DEFENSE</span>
+      <span class="marquee-dot"></span>
+      <span>PAD WORK</span>
+      <span class="marquee-dot"></span>
+      <span>CONDITIONING</span>
+      <span class="marquee-dot"></span>
+    </div>
+  </div>
+
+  <!-- Programs Section -->
+  <section class="section programs" id="programs">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Our Programs</h2>
+        <p class="section-subtitle">World-class training programs designed to push your limits and build real fighting skills.</p>
+      </div>
+
+      <div class="programs-grid">
+        <div class="program-card" data-animate="fade-up" data-delay="0">
+          <div class="program-card-number">01</div>
+          <div class="program-card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/>
+            </svg>
+          </div>
+          <h3 class="program-card-title">1-on-1 Striking</h3>
+          <p class="program-card-text">Private striking sessions with professional pad holders. Master boxing, kickboxing, and Muay Thai techniques with personalized attention and real-time feedback.</p>
+          <div class="program-card-tags">
+            <span class="program-tag">Boxing</span>
+            <span class="program-tag">Kickboxing</span>
+            <span class="program-tag">Muay Thai</span>
+          </div>
+          <div class="program-card-line"></div>
+        </div>
+
+        <div class="program-card" data-animate="fade-up" data-delay="100">
+          <div class="program-card-number">02</div>
+          <div class="program-card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3 class="program-card-title">Grappling & Ground Control</h3>
+          <p class="program-card-text">Learn takedowns, submissions, sweeps, and positional control. Our grappling program covers wrestling and Brazilian Jiu-Jitsu fundamentals through advanced techniques.</p>
+          <div class="program-card-tags">
+            <span class="program-tag">BJJ</span>
+            <span class="program-tag">Wrestling</span>
+            <span class="program-tag">Submissions</span>
+          </div>
+          <div class="program-card-line"></div>
+        </div>
+
+        <div class="program-card" data-animate="fade-up" data-delay="200">
+          <div class="program-card-number">03</div>
+          <div class="program-card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="program-card-title">Self-Defense Training</h3>
+          <p class="program-card-text">Practical self-defense skills for real-world scenarios. Build confidence and situational awareness with techniques drawn from multiple martial arts disciplines.</p>
+          <div class="program-card-tags">
+            <span class="program-tag">Practical</span>
+            <span class="program-tag">Awareness</span>
+            <span class="program-tag">All Ages</span>
+          </div>
+          <div class="program-card-line"></div>
+        </div>
+
+        <div class="program-card" data-animate="fade-up" data-delay="300">
+          <div class="program-card-number">04</div>
+          <div class="program-card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3 class="program-card-title">Youth Development</h3>
+          <p class="program-card-text">Specialized programs for ages 7+. We build discipline, respect, physical fitness, and anti-bullying confidence in a safe, structured environment led by experienced coaches.</p>
+          <div class="program-card-tags">
+            <span class="program-tag">Ages 7+</span>
+            <span class="program-tag">Discipline</span>
+            <span class="program-tag">Confidence</span>
+          </div>
+          <div class="program-card-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-banner-bg"></div>
+    <div class="container">
+      <div class="cta-banner-content" data-animate="fade-up">
+        <h2 class="cta-banner-title">READY TO<br><span class="text-accent">FIGHT?</span></h2>
+        <p class="cta-banner-text">Your first session is just a message away. No experience needed &mdash; just the will to start.</p>
+        <a href="#contact" class="btn btn-primary btn-lg">
+          <span>Book Your First Session</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section class="section schedule" id="schedule">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">When We Train</span>
+        <h2 class="section-title">Class Schedule</h2>
+        <p class="section-subtitle">Group classes run weekly. Private sessions available by appointment any day of the week.</p>
+      </div>
+
+      <div class="schedule-grid" data-animate="fade-up" data-delay="100">
+        <div class="schedule-card schedule-card-featured">
+          <div class="schedule-card-day">Saturday</div>
+          <div class="schedule-card-time">1:00 PM &ndash; 2:00 PM</div>
+          <div class="schedule-card-name">Grappling &amp; Ground Control</div>
+          <div class="schedule-card-detail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Ages 7+
+          </div>
+          <div class="schedule-card-detail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            10 Falconer Dr #8, Mississauga
+          </div>
+          <span class="schedule-card-badge">Weekly Class</span>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-card-day">Any Day</div>
+          <div class="schedule-card-time">By Appointment</div>
+          <div class="schedule-card-name">Private 1-on-1 Sessions</div>
+          <div class="schedule-card-detail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            All Ages &amp; Levels
+          </div>
+          <div class="schedule-card-detail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            DM to book
+          </div>
+          <span class="schedule-card-badge schedule-card-badge-alt">Flexible</span>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-card-day">Community Events</div>
+          <div class="schedule-card-time">Check Instagram</div>
+          <div class="schedule-card-name">Self-Defense Workshops</div>
+          <div class="schedule-card-detail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Open to Community
+          </div>
+          <div class="schedule-card-detail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            With Masjid Al-Ezz
+          </div>
+          <span class="schedule-card-badge schedule-card-badge-alt">Special</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coaches Section -->
+  <section class="section coaches" id="coaches">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">The Team</span>
+        <h2 class="section-title">Professional Coaches</h2>
+        <p class="section-subtitle">Our certified coaches and pad holders bring real fight experience to every session.</p>
+      </div>
+
+      <div class="coaches-content" data-animate="fade-up" data-delay="100">
+        <div class="coaches-highlight">
+          <div class="coaches-highlight-inner">
+            <div class="coaches-quote-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+            </div>
+            <blockquote class="coaches-quote">
+              We don't just teach you how to fight &mdash; we teach you how to think, adapt, and overcome.
+              Every athlete who walks through our doors gets treated like a champion in the making.
+            </blockquote>
+            <div class="coaches-quote-attr">
+              <strong>Strike MMA Coaching Team</strong>
+              <span>Professional Coaches &amp; Pad Holders</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="coaches-values">
+          <div class="coaches-value">
+            <div class="coaches-value-number">01</div>
+            <div>
+              <h4>Technical Excellence</h4>
+              <p>Coaches with real combat sports backgrounds who break down techniques with precision and clarity.</p>
+            </div>
+          </div>
+          <div class="coaches-value">
+            <div class="coaches-value-number">02</div>
+            <div>
+              <h4>Personalized Approach</h4>
+              <p>Every session is built around your goals, whether it's fitness, competition, or self-defense.</p>
+            </div>
+          </div>
+          <div class="coaches-value">
+            <div class="coaches-value-number">03</div>
+            <div>
+              <h4>Safe Environment</h4>
+              <p>We prioritize technique and control. Progress at your pace in a respectful, supportive space.</p>
+            </div>
+          </div>
+          <div class="coaches-value">
+            <div class="coaches-value-number">04</div>
+            <div>
+              <h4>Community First</h4>
+              <p>We partner with local organizations to bring martial arts to the broader community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="section partners" id="partners">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Our Partners</span>
+        <h2 class="section-title">Trusted Partnerships</h2>
+        <p class="section-subtitle">We collaborate with organizations that share our values of health, community, and empowerment.</p>
+      </div>
+
+      <div class="partners-grid" data-animate="fade-up" data-delay="100">
+        <div class="partner-card">
+          <div class="partner-card-logo">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+            </svg>
+          </div>
+          <h3 class="partner-card-name">Barakah Nutrition</h3>
+          <p class="partner-card-text">Premium halal nutrition products to fuel your training and recovery. Trusted supplements for athletes who care about what goes into their body.</p>
+          <div class="partner-card-promo">
+            <span class="promo-label">Exclusive Promo Code</span>
+            <span class="promo-code">STRIKEMMA</span>
+          </div>
+        </div>
+
+        <div class="partner-card">
+          <div class="partner-card-logo">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="partner-card-name">Masjid Al-Ezz</h3>
+          <p class="partner-card-text">Community partnership bringing self-defense workshops and youth martial arts programs to the local community. Building stronger, more confident individuals together.</p>
+          <div class="partner-card-promo">
+            <span class="promo-label">Partnership</span>
+            <span class="promo-code" style="font-size: 0.9rem;">Community Programs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Marquee -->
+  <div class="testimonial-section">
+    <div class="container">
+      <div class="testimonial-grid" data-animate="fade-up">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p>"The private sessions are incredible. My coach breaks down every technique and adjusts to my pace. Best MMA training in Mississauga."</p>
+          <span class="testimonial-author">&mdash; Satisfied Athlete</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p>"My son started at the Saturday grappling class and his confidence has skyrocketed. The coaches are patient and professional. Highly recommend."</p>
+          <span class="testimonial-author">&mdash; Proud Parent</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p>"Went from never throwing a punch to feeling completely confident in my ability to defend myself. Strike MMA changed my life."</p>
+          <span class="testimonial-author">&mdash; Self-Defense Student</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Start Your Journey</h2>
+        <p class="section-subtitle">Ready to train? Reach out on Instagram to book your session or ask any questions.</p>
+      </div>
+
+      <div class="contact-grid" data-animate="fade-up" data-delay="100">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>10 Falconer Dr #8<br>Mississauga, ON</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <div>
+              <h4>Instagram</h4>
+              <p><a href="https://instagram.com/strike._mma" target="_blank" rel="noopener">@strike._mma</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <p>Private sessions by appointment<br>Saturday class: 1&ndash;2 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <div class="contact-cta-inner">
+            <h3>Book via Instagram</h3>
+            <p>Send us a DM on Instagram to book your private session or register for our weekly grappling class. We typically respond within a few hours.</p>
+            <a href="https://instagram.com/strike._mma" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-block">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span>Message @strike._mma</span>
+            </a>
+            <div class="contact-cta-note">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              No commitment required &mdash; just send a message
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-container" data-animate="fade-up" data-delay="200">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.123456789!2d-79.6234!3d43.5890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s10+Falconer+Dr+%238%2C+Mississauga%2C+ON!5e0!3m2!1sen!2sca!4v1234567890"
+          width="100%"
+          height="400"
+          style="border:0; border-radius: 16px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Strike MMA Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <svg class="footer-logo" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+            <circle cx="25" cy="25" r="24" stroke="currentColor" stroke-width="1"/>
+            <text x="25" y="21" text-anchor="middle" fill="#E63946" font-family="Bebas Neue, sans-serif" font-size="11" letter-spacing="1">STRIKE</text>
+            <text x="25" y="33" text-anchor="middle" fill="currentColor" font-family="Bebas Neue, sans-serif" font-size="11" letter-spacing="2">MMA</text>
+          </svg>
+          <p>Private Mixed Martial Arts Training<br>Mississauga, Ontario</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#coaches">Coaches</a>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="https://instagram.com/strike._mma" target="_blank" rel="noopener">Instagram</a>
+            <a href="#contact">Contact</a>
+            <a href="#partners">Partners</a>
+          </div>
+          <div class="footer-col">
+            <h4>Location</h4>
+            <p>10 Falconer Dr #8<br>Mississauga, ON<br>Canada</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Strike MMA. All rights reserved.</p>
+        <p class="footer-tagline">Train Hard. Stay Humble. Strike First.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
