@@ -5,19 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strike MMA | Private Mixed Martial Arts Training - Mississauga</title>
   <meta name="description" content="Strike MMA - Premium private Mixed Martial Arts coaching in Mississauga, ON. One-on-one training, professional coaches, grappling classes, and self-defense programs.">
+  <meta name="keywords" content="MMA, Mixed Martial Arts, Mississauga, private training, boxing, kickboxing, muay thai, BJJ, grappling, self-defense">
+  <meta property="og:title" content="Strike MMA | Private Mixed Martial Arts Training">
+  <meta property="og:description" content="Premium private MMA coaching in Mississauga. Striking, grappling, self-defense.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#E63946">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#129354;</text></svg>">
 </head>
 <body>
 
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- Loader -->
   <div id="loader" class="loader">
     <div class="loader-inner">
-      <div class="loader-ring"></div>
-      <span class="loader-text">STRIKE</span>
+      <div class="loader-logo">
+        <svg class="loader-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="loader-circle" cx="60" cy="60" r="56" stroke="#E63946" stroke-width="1.5" stroke-dasharray="352" stroke-dashoffset="352"/>
+          <text x="60" y="52" text-anchor="middle" fill="#E63946" font-family="Bebas Neue, sans-serif" font-size="24" letter-spacing="3">STRIKE</text>
+          <text x="60" y="78" text-anchor="middle" fill="#f5f5f5" font-family="Bebas Neue, sans-serif" font-size="24" letter-spacing="5">MMA</text>
+        </svg>
+      </div>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <span class="loader-text">PREPARING YOUR EXPERIENCE</span>
     </div>
   </div>
 
@@ -40,8 +57,8 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#programs" class="nav-link">Programs</a>
         <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
         <a href="#coaches" class="nav-link">Coaches</a>
-        <a href="#partners" class="nav-link">Partners</a>
         <a href="#contact" class="nav-link nav-link-cta">Get Started</a>
       </div>
 
@@ -59,14 +76,17 @@
       <a href="#about" class="mobile-link">About</a>
       <a href="#programs" class="mobile-link">Programs</a>
       <a href="#schedule" class="mobile-link">Schedule</a>
+      <a href="#pricing" class="mobile-link">Pricing</a>
       <a href="#coaches" class="mobile-link">Coaches</a>
       <a href="#partners" class="mobile-link">Partners</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
       <a href="#contact" class="mobile-link mobile-link-cta">Get Started</a>
     </div>
   </div>
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
     <div class="hero-bg">
       <div class="hero-grain"></div>
       <div class="hero-gradient"></div>
@@ -86,8 +106,8 @@
       </div>
 
       <h1 class="hero-title" data-animate="fade-up" data-delay="100">
-        <span class="hero-title-line">TRAIN LIKE A</span>
-        <span class="hero-title-line hero-title-outline">FIGHTER</span>
+        <span class="hero-title-line hero-split-text">TRAIN LIKE A</span>
+        <span class="hero-title-line hero-title-outline hero-split-text">FIGHTER</span>
       </h1>
 
       <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
@@ -96,7 +116,7 @@
       </p>
 
       <div class="hero-actions" data-animate="fade-up" data-delay="300">
-        <a href="#contact" class="btn btn-primary">
+        <a href="#contact" class="btn btn-primary btn-glow">
           <span>Book a Session</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
@@ -107,17 +127,17 @@
 
       <div class="hero-stats" data-animate="fade-up" data-delay="400">
         <div class="hero-stat">
-          <span class="hero-stat-number" data-count="1">1</span><span class="hero-stat-suffix">:1</span>
+          <span class="hero-stat-number" data-count="1">0</span><span class="hero-stat-suffix">:1</span>
           <span class="hero-stat-label">Private Coaching</span>
         </div>
         <div class="hero-stat-divider"></div>
         <div class="hero-stat">
-          <span class="hero-stat-number" data-count="7">7</span><span class="hero-stat-suffix">+</span>
+          <span class="hero-stat-number" data-count="7">0</span><span class="hero-stat-suffix">+</span>
           <span class="hero-stat-label">Ages Welcome</span>
         </div>
         <div class="hero-stat-divider"></div>
         <div class="hero-stat">
-          <span class="hero-stat-number" data-count="5">5</span><span class="hero-stat-suffix">&#9733;</span>
+          <span class="hero-stat-number" data-count="5">0</span><span class="hero-stat-suffix">&#9733;</span>
           <span class="hero-stat-label">Rated Training</span>
         </div>
       </div>
@@ -127,7 +147,19 @@
       <span>Scroll</span>
       <div class="hero-scroll-line"></div>
     </div>
+
+    <!-- Floating elements -->
+    <div class="hero-float hero-float-1"></div>
+    <div class="hero-float hero-float-2"></div>
+    <div class="hero-float hero-float-3"></div>
   </section>
+
+  <!-- Wave divider -->
+  <div class="section-divider">
+    <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 50L48 45.7C96 41.3 192 32.7 288 28.2C384 23.7 480 23.3 576 30.8C672 38.3 768 53.7 864 57.5C960 61.3 1056 53.7 1152 46.8C1248 40 1344 34 1392 31L1440 28V100H1392C1344 100 1248 100 1152 100C1056 100 960 100 864 100C768 100 672 100 576 100C480 100 384 100 288 100C192 100 96 100 48 100H0V50Z" fill="#111111"/>
+    </svg>
+  </div>
 
   <!-- About Section -->
   <section class="section about" id="about">
@@ -136,19 +168,23 @@
         <div class="about-visual" data-animate="fade-right">
           <div class="about-visual-card">
             <div class="about-icon-grid">
-              <div class="about-icon-item">
+              <div class="about-icon-item" data-tilt>
+                <div class="about-icon-glow"></div>
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
                 <span>Discipline</span>
               </div>
-              <div class="about-icon-item">
+              <div class="about-icon-item" data-tilt>
+                <div class="about-icon-glow"></div>
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
                 <span>Power</span>
               </div>
-              <div class="about-icon-item">
+              <div class="about-icon-item" data-tilt>
+                <div class="about-icon-glow"></div>
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
                 <span>Confidence</span>
               </div>
-              <div class="about-icon-item">
+              <div class="about-icon-item" data-tilt>
+                <div class="about-icon-glow"></div>
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 <span>Defense</span>
               </div>
@@ -213,6 +249,38 @@
     </div>
   </section>
 
+  <!-- Impact Stats Section -->
+  <section class="section impact-section">
+    <div class="container">
+      <div class="impact-grid" data-animate="fade-up">
+        <div class="impact-card">
+          <div class="impact-number" data-count-up="100">0</div>
+          <div class="impact-suffix">+</div>
+          <div class="impact-label">Athletes Trained</div>
+          <div class="impact-bar"><div class="impact-bar-fill" style="--fill: 85%"></div></div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-number" data-count-up="500">0</div>
+          <div class="impact-suffix">+</div>
+          <div class="impact-label">Sessions Completed</div>
+          <div class="impact-bar"><div class="impact-bar-fill" style="--fill: 92%"></div></div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-number" data-count-up="5">0</div>
+          <div class="impact-suffix">.0</div>
+          <div class="impact-label">Average Rating</div>
+          <div class="impact-bar"><div class="impact-bar-fill" style="--fill: 100%"></div></div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-number" data-count-up="3">0</div>
+          <div class="impact-suffix">+</div>
+          <div class="impact-label">Years Experience</div>
+          <div class="impact-bar"><div class="impact-bar-fill" style="--fill: 70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Marquee -->
   <div class="marquee">
     <div class="marquee-track">
@@ -254,6 +322,7 @@
 
       <div class="programs-grid">
         <div class="program-card" data-animate="fade-up" data-delay="0">
+          <div class="program-card-glow"></div>
           <div class="program-card-number">01</div>
           <div class="program-card-icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -271,6 +340,7 @@
         </div>
 
         <div class="program-card" data-animate="fade-up" data-delay="100">
+          <div class="program-card-glow"></div>
           <div class="program-card-number">02</div>
           <div class="program-card-icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -288,6 +358,7 @@
         </div>
 
         <div class="program-card" data-animate="fade-up" data-delay="200">
+          <div class="program-card-glow"></div>
           <div class="program-card-number">03</div>
           <div class="program-card-icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -305,6 +376,7 @@
         </div>
 
         <div class="program-card" data-animate="fade-up" data-delay="300">
+          <div class="program-card-glow"></div>
           <div class="program-card-number">04</div>
           <div class="program-card-icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -327,11 +399,12 @@
   <!-- CTA Banner -->
   <section class="cta-banner">
     <div class="cta-banner-bg"></div>
+    <div class="cta-banner-particles" id="ctaParticles"></div>
     <div class="container">
       <div class="cta-banner-content" data-animate="fade-up">
-        <h2 class="cta-banner-title">READY TO<br><span class="text-accent">FIGHT?</span></h2>
+        <h2 class="cta-banner-title">READY TO<br><span class="text-accent text-glitch" data-text="FIGHT?">FIGHT?</span></h2>
         <p class="cta-banner-text">Your first session is just a message away. No experience needed &mdash; just the will to start.</p>
-        <a href="#contact" class="btn btn-primary btn-lg">
+        <a href="#contact" class="btn btn-primary btn-lg btn-glow">
           <span>Book Your First Session</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
@@ -350,6 +423,7 @@
 
       <div class="schedule-grid" data-animate="fade-up" data-delay="100">
         <div class="schedule-card schedule-card-featured">
+          <div class="schedule-card-glow"></div>
           <div class="schedule-card-day">Saturday</div>
           <div class="schedule-card-time">1:00 PM &ndash; 2:00 PM</div>
           <div class="schedule-card-name">Grappling &amp; Ground Control</div>
@@ -394,6 +468,126 @@
           <span class="schedule-card-badge schedule-card-badge-alt">Special</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Investment</span>
+        <h2 class="section-title">Training Packages</h2>
+        <p class="section-subtitle">Flexible options to match your goals and budget. Every package includes professional coaching and personalized programming.</p>
+      </div>
+
+      <div class="pricing-grid" data-animate="fade-up" data-delay="100">
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <span class="pricing-tier">Starter</span>
+            <div class="pricing-price">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">50</span>
+              <span class="pricing-period">/session</span>
+            </div>
+            <p class="pricing-desc">Perfect for trying out private MMA training</p>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Single private session
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Personalized assessment
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Striking or grappling focus
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              All skill levels welcome
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-block">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-card-badge">Most Popular</div>
+          <div class="pricing-card-header">
+            <span class="pricing-tier">Fighter</span>
+            <div class="pricing-price">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">180</span>
+              <span class="pricing-period">/4 sessions</span>
+            </div>
+            <p class="pricing-desc">Our most popular package for consistent growth</p>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              4 private sessions (save $20)
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Custom training plan
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Progress tracking
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Mixed discipline training
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Free Saturday class access
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block btn-glow">Choose Fighter</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <span class="pricing-tier">Champion</span>
+            <div class="pricing-price">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">400</span>
+              <span class="pricing-period">/10 sessions</span>
+            </div>
+            <p class="pricing-desc">Maximum value for dedicated athletes</p>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              10 private sessions (save $100)
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Comprehensive fight camp
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Nutrition guidance
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Priority scheduling
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Unlimited Saturday classes
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-block">Go Champion</a>
+        </div>
+      </div>
+
+      <p class="pricing-note" data-animate="fade-up" data-delay="200">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        All prices in CAD. DM us on Instagram for exact pricing and custom packages.
+      </p>
     </div>
   </section>
 
@@ -477,7 +671,7 @@
           <p class="partner-card-text">Premium halal nutrition products to fuel your training and recovery. Trusted supplements for athletes who care about what goes into their body.</p>
           <div class="partner-card-promo">
             <span class="promo-label">Exclusive Promo Code</span>
-            <span class="promo-code">STRIKEMMA</span>
+            <span class="promo-code" title="Click to copy">STRIKEMMA</span>
           </div>
         </div>
 
@@ -498,10 +692,14 @@
     </div>
   </section>
 
-  <!-- Testimonial Marquee -->
+  <!-- Testimonials -->
   <div class="testimonial-section">
     <div class="container">
-      <div class="testimonial-grid" data-animate="fade-up">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Reviews</span>
+        <h2 class="section-title">What Athletes Say</h2>
+      </div>
+      <div class="testimonial-grid" data-animate="fade-up" data-delay="100">
         <div class="testimonial-card">
           <div class="testimonial-stars">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -511,7 +709,13 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
           <p>"The private sessions are incredible. My coach breaks down every technique and adjusts to my pace. Best MMA training in Mississauga."</p>
-          <span class="testimonial-author">&mdash; Satisfied Athlete</span>
+          <div class="testimonial-author-info">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <span class="testimonial-author">Satisfied Athlete</span>
+              <span class="testimonial-role">Private Training Client</span>
+            </div>
+          </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-stars">
@@ -522,7 +726,13 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
           <p>"My son started at the Saturday grappling class and his confidence has skyrocketed. The coaches are patient and professional. Highly recommend."</p>
-          <span class="testimonial-author">&mdash; Proud Parent</span>
+          <div class="testimonial-author-info">
+            <div class="testimonial-avatar">P</div>
+            <div>
+              <span class="testimonial-author">Proud Parent</span>
+              <span class="testimonial-role">Youth Program</span>
+            </div>
+          </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-stars">
@@ -533,11 +743,90 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#E63946" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
           <p>"Went from never throwing a punch to feeling completely confident in my ability to defend myself. Strike MMA changed my life."</p>
-          <span class="testimonial-author">&mdash; Self-Defense Student</span>
+          <div class="testimonial-author-info">
+            <div class="testimonial-avatar">S</div>
+            <div>
+              <span class="testimonial-author">Self-Defense Student</span>
+              <span class="testimonial-role">6 Month Client</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- FAQ Section -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Common Questions</span>
+        <h2 class="section-title">FAQ</h2>
+        <p class="section-subtitle">Everything you need to know before your first session.</p>
+      </div>
+
+      <div class="faq-list" data-animate="fade-up" data-delay="100">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do I need any prior experience to start training?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely not! We welcome complete beginners. Our coaches will assess your current fitness level and build a training plan specifically for you. Many of our best athletes started with zero experience.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What should I bring to my first session?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Wear comfortable athletic clothing and bring a water bottle. We provide all necessary training equipment including gloves, pads, and protective gear. Just bring your energy and willingness to learn!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is the training safe for kids?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Safety is our top priority. Our youth programs (ages 7+) focus on technique, discipline, and controlled movements. All sessions are supervised by experienced coaches who specialize in youth development. No full-contact sparring for beginners.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I book a session?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Simply send us a DM on Instagram <a href="https://instagram.com/strike._mma" target="_blank" rel="noopener">@strike._mma</a> and we'll set you up! We typically respond within a few hours and can schedule your first session within the week.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What styles of martial arts do you teach?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>We offer a comprehensive MMA curriculum including Boxing, Kickboxing, Muay Thai, Brazilian Jiu-Jitsu, Wrestling, and practical self-defense techniques. Our coaches can focus on specific disciplines or create a mixed training plan based on your interests.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I join the Saturday group class without buying a package?</span>
+            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Our Saturday grappling class is open to everyone ages 7+. DM us on Instagram for drop-in pricing. Package holders get free or discounted access depending on their plan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <section class="section contact" id="contact">
@@ -585,7 +874,7 @@
           <div class="contact-cta-inner">
             <h3>Book via Instagram</h3>
             <p>Send us a DM on Instagram to book your private session or register for our weekly grappling class. We typically respond within a few hours.</p>
-            <a href="https://instagram.com/strike._mma" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-block">
+            <a href="https://instagram.com/strike._mma" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-block btn-glow">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
               <span>Message @strike._mma</span>
             </a>
@@ -631,6 +920,7 @@
             <a href="#about">About</a>
             <a href="#programs">Programs</a>
             <a href="#schedule">Schedule</a>
+            <a href="#pricing">Pricing</a>
             <a href="#coaches">Coaches</a>
           </div>
           <div class="footer-col">
@@ -638,6 +928,7 @@
             <a href="https://instagram.com/strike._mma" target="_blank" rel="noopener">Instagram</a>
             <a href="#contact">Contact</a>
             <a href="#partners">Partners</a>
+            <a href="#faq">FAQ</a>
           </div>
           <div class="footer-col">
             <h4>Location</h4>
@@ -651,6 +942,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Floating CTA (Mobile) -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="#contact" class="btn btn-primary btn-glow">
+      <span>Book Now</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </a>
+  </div>
 
   <script src="script.js"></script>
 </body>
